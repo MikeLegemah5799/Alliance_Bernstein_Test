@@ -1,0 +1,23 @@
+@font-face {
+    font-family: KlavikaBold;
+    src: url(/fonts/KlavikaWebBasicBold.eot);
+    src: url(/fonts/KlavikaWebBasicBold.woff);
+}
+
+@font-face {
+    font-family: KlavikaLight;
+    src: url(/fonts/KlavikaWebBasicLight.eot);
+    src: url(/fonts/KlavikaWebBasicLight.woff);
+}
+
+@font-face {
+    font-family: KlavikaMedium;
+    src: url(/fonts/KlavikaWebBasicMedium.eot);
+    src: url(/fonts/KlavikaWebBasicMedium.woff);
+}
+
+@font-face {
+    font-family: KlavikaRegular;
+    src: url(/fonts/KlavikaWebBasicRegular.eot);
+    src: url(/fonts/KlavikaWebBasicRegular.woff);
+}

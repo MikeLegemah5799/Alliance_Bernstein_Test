@@ -1,0 +1,583 @@
+@import "fonts.css";
+
+/***********************************************************************
+*************************   Base Styles   ******************************
+***********************************************************************/
+
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-family: "KlavikaLight";
+}
+
+a {
+    font-family: "KlavikaBold";
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+
+
+li {
+     list-style: none;
+}
+
+/****************************   Desktop    *****************************/
+
+@media screen and (min-width: 1170px) {
+    .container {
+        max-width: 1170px;
+    }
+    
+}
+
+
+/***********************************************************************
+*************************   Header Styles   ****************************
+************************************************************************/
+
+header {
+    background: url('../img/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 640px;
+}
+
+header .top-bar {
+    background: #1e9bd7;
+}
+
+header .top-bar p {
+    color: #fff;
+    font-family: "KlavikaLight";
+    padding: 12px 0;
+}
+
+header div.bottom-bar {
+    background: #1e9bd7;
+    margin-top: 2px;
+}
+
+header .bottom-bar .logo {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+header .bottom-bar .logo img {
+    width: 40px;
+}
+
+header nav.navbar.mobile {
+    position: relative;
+    padding: 30px;
+}
+
+header a.hamburger {
+    position: absolute;
+    right: 10px;
+    top: 54px;
+    color: #fff;
+}
+
+header nav.navbar ul li a{
+    color: #fff;
+    display: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+header nav.navbar ul li a:hover, header nav.navbar ul li a.active {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+}
+
+header nav.navbar.mobile ul li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+header a.hamburger {
+    font-size: 2.3rem;
+}
+
+header .breadcrumbs {
+    margin-top: 16px;
+}
+
+header .breadcrumbs ul li.no-link {
+    color: #8c8c8c;
+    font-family: "KlavikaRegular";
+}
+
+header .hero-content {
+    margin-top: 42px;
+}
+
+header .hero-content .vertical {
+    font-family: "KlavikaBold";
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .hero-content h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 32px;
+    margin-bottom: 38px;
+}
+
+header .hero-content p.date {
+    color: #fff;
+    font-family: "KlavikaRegular";
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+header .hero-content ul {
+    margin-top: 24px;
+}
+
+header .hero-content ul li a.btn {
+    font-family: "KlavikaRegular";
+    padding: 8px; 
+    border: 2px solid #fff;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+}
+
+/***********************   Tablet ************************************/
+
+@media screen and (min-width: 768px) {
+    header .breadcrumbs ul li.no-link, header .breadcrumbs ul li a {
+        font-size: .75rem;
+    }
+
+    header .breadcrumbs ul li {
+        display: inline;
+    }
+
+    header .hero-content {
+        margin-top: 92px;
+    }
+
+    header .hero-content h1 {
+        font-size: 3rem;
+        margin-top: 32px;
+        margin-bottom: 48px;
+    }
+
+    header .hero-content ul {
+        margin-top: 44px;
+    }
+    
+    header .hero-content ul li {
+        width: 30%;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    header .hero-content ul li:first-child {
+        margin-left: 0;
+    }
+
+}/*tablet*/
+
+/***************************** Desktop *******************************/
+
+@media screen and (min-width: 1023px) {
+    header .bottom-bar .logo img {
+        width: 80px;
+    }
+
+    header a.hamburger {
+        display: none;
+    }
+
+    header nav.navbar {
+        float: right;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    header nav.navbar ul li {
+        display: inline-block;
+    }
+
+    header nav.navbar ul li a {
+        display: block;
+        margin: 0 23px;
+        transition: none;
+    }
+
+    header nav.navbar ul li a img.search {
+        position: relative;
+        top: 8px;
+    }
+
+    header .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    header .hero-content ul li {
+        width: initial;
+        margin: 0 3px;
+    }
+
+    header .hero-content ul li a.btn {
+        padding: 10px 10px 8px 10px;
+    }
+
+
+}/* desktop*/
+
+
+@media screen and (min-width: 1120px) {
+    header {
+        height: 924px;
+    }
+
+    header .hero-content h1 {
+        font-size: 5rem;
+    }
+
+}
+
+
+/***********************************************************************
+*************************   Main Content   *****************************
+************************************************************************/
+
+article {
+    margin-top: 40px!important;
+}
+
+article p {
+    line-height: 1.5rem;
+}
+
+article a {
+    color: #000;
+}
+
+article h4, article h5 {
+    font-family: "KlavikaBold";
+}
+
+article .more-content-side {
+    margin-top: 40px;
+    border: 1px solid #e1e1e1;
+    padding: 12px;
+    display: table;
+}
+
+article .more-content-side h5 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+article .more-content-side ul li {
+    display: inline-block;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px 0;
+}
+
+article .more-content-side ul li:last-child {
+    border: none;
+}
+
+article .more-content-side a {
+    float: left;
+    width: 66.666666%;
+    margin-top: 20px;
+}
+
+article .more-content-side img {
+    float: right;
+    width: 33.333333%;
+}
+
+/***************************** Tablet  *******************************/
+
+@media screen and (min-width: 768px) {
+    article .more-content-side ul li {
+        padding: 20px 0px;
+        width: 100%;
+    }
+
+    aside a.btn-black {
+        width: 33.333333%;
+    }
+
+    aside a.btn-black>img {
+        margin-left: 20% !important;
+    }
+}/* tablet */
+
+
+/***************************** Desktop  *******************************/
+
+@media screen and (min-width: 1023px) {
+    article {
+        margin-top: 80px!important;
+    }
+
+    article section {
+        width: 75%;
+        float: left;
+        padding-bottom: 80px;
+    }
+
+    article section .main-article {
+        width: 66.66666%;
+        float: right;
+    }
+
+    article section .main-article p.push-right, article section .main-article h4.push-right {
+        margin-left: 74px;
+    }
+
+    article .more-content-side {
+        position: relative;
+        left: 52px;
+        width: 30%;
+        margin-top: 96px;
+        margin-left: 0;
+    }
+
+    article .more-content-side ul li {
+        padding: 10px 0;
+    }
+
+    article .more-content-side a {
+        margin-top: 8px;
+        font-size: .82rem;
+        line-height: 1.1rem;
+    }
+
+    article .more-content-side img {
+        width: 60px;
+        height: 60px;
+    }
+
+}
+
+
+
+
+
+/***********************************************************************
+*************************   Sidebar Contentt   *************************
+************************************************************************/
+aside {
+    margin-top: 40px;
+}
+
+aside h5 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+aside p {
+    font-family: "KlavikaRegular";
+    line-height: 1.2rem;
+}
+
+aside p.name {
+    font-family: "KlavikaBold";
+    margin-bottom: 5px;
+}
+
+aside a.btn-black {
+    display: block;
+    margin-top: 20px;
+    padding: 8px; 
+    border: 2px solid #000;
+    text-transform: uppercase;
+    font-size: 1.45rem;
+}
+
+aside a.btn-black>img {
+    margin-left: 44%;
+    position: relative;
+    top: 5px;
+}
+
+
+aside ul.sidebar-social {
+    margin-top: 30px;
+    text-align: center;
+}
+
+aside ul.sidebar-social li {
+    margin-bottom: 10px;
+}
+
+
+/***************************** Tablet  *******************************/
+
+@media screen and (min-width: 768px) {
+    aside {
+        padding-bottom: 50px;
+    }
+}/* tablet*/
+
+
+/***************************** Desktop  *******************************/
+
+@media screen and (min-width: 1023px) {
+    aside {
+        width: 20%;
+        float: left;
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    aside p:not(.name) {
+        font-size: .75rem;
+        margin-bottom: 40px;
+    }
+
+    aside a.btn-black {
+        display: inline;
+        font-size: 1rem;
+        width: initial;
+    }
+
+    aside a.btn-black>img {
+        position: relative;
+        top: 9px;
+        margin-left: 15% !important;
+    }
+
+    aside ul.sidebar-social {
+        width: 36px;
+    }
+
+    aside ul.sidebar-social li {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #000;
+        padding-bottom: 4px;
+    }
+}
+
+
+
+
+/***********************************************************************
+*************************  Footer Content   ****************************
+************************************************************************/
+
+footer {
+    background: #1e9bd7;
+    padding: 40px 0;
+}
+
+footer h5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "KlavikaBold";
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+footer .more-article {
+    width: 270px;
+    margin: 10px auto;
+}
+
+footer .more-article a {
+    font-family: "KlavikaLight";
+    display: block;
+    margin-top: 10px;
+    line-height: 1.2rem;
+}
+
+footer .more-article time {
+    color: #fff;
+    font-family: "KlavikaLight";
+    display: block;
+    margin-top: 10px;
+    font-size: .65rem;
+}
+
+footer .copyright-info {
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer .copyright-info ul li {
+    color: #fff;
+    font-family: "KlavikaLight";
+    font-size: .75rem;
+    margin: 10px;
+}
+
+footer .copyright-info ul li a {
+    font-family: "KlavikaLight";
+    font-size: .75rem;
+}
+
+
+/***************************** Tablet  *******************************/
+
+@media screen and (min-width: 768px) {
+    footer .more-article {
+        float: left;
+        margin: 10px 20px 10px 60px;
+    }
+
+    footer .copyright-info {
+        clear: both;
+        position: relative;
+        top: 30px;
+    }
+
+    footer .copyright-info ul li {
+        display: inline-block;
+    }
+
+}/* tablet */
+
+/***************************** Desktop  *******************************/
+
+@media screen and (min-width: 1170px) {
+    footer {
+        padding: 60px 0 90px 0;
+        clear: both;
+    }
+
+
+    footer h5{
+        text-align: left;
+    }
+
+    footer .more-article {
+        margin: 10px; 
+    }
+
+    footer .more-article:first-child {
+        margin-left: 0;
+    }
+
+    footer .more-article a {
+        font-size: 1.4rem;
+        padding-right: 40px;
+        line-height: 1.8rem;
+    }
+
+    footer .copyright-info {
+        text-align: left;
+        padding-top: 90px;
+    }
+
+}
